@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>javascript</title>
+  </head>
+  <body>
+
+    <h1>Array print</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script type="text/javascript">
+
+      var namen = ["Zoe","Bram","Clarissa","Isa","Gerrie"];//array namen
+      var uitvoer = "";//voor uitvoer
+
+      var namen2 = ["Zoe","Bram","Clarissa","Isa","Gerrie", "Valdemar"];//array namen||e
+      var uitvoer2 = "";//voor uitvoer
+
+      var i = 0;
+      var j = 0;
+
+      //a & c
+      for (i; i < namen.length; i++) {//hier ga ik het printen
+        namen.sort();
+        uitvoer += namen[i] + "<br>";//uitvoer wordt dan de namen als uitvoer
+      }
+      //b & c
+      while (j < namen2.length) {
+        namen2.sort();//sorteert de array van A - Z
+        uitvoer2 += namen2[j] + "#";//we zetten nu alle namen2 in uitvoer zodat we dat buiten de loop kunnen printen
+        j++;
+      }
+
+      document.getElementById('demo').innerHTML = uitvoer;//hier printen we alles
+      document.getElementById('demo1').innerHTML = namen.length;//d
+      document.getElementById('demo2').innerHTML = uitvoer2;//hier printen we alles
+
+
+
+    </script>
+
+  </body>
+</html>

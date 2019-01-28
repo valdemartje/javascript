@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>javascript</title>
+  </head>
+  <body>
+
+    <h1>Hello</h1>
+    <p id="demo"></p>
+
+    <script type="text/javascript">
+
+      var woord = "opleiding";
+      var split = woord.split("");
+      var uitvoer = "";
+
+        for (var i = 0; i < woord.length; i++) {
+          uitvoer += split[i] + "<br>";
+        }
+      document.getElementById('demo').innerHTML = uitvoer;
+
+    </script>
+
+  </body>
+</html>

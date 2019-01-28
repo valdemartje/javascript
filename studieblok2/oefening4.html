@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>javascript</title>
+  </head>
+  <body>
+
+    <h1>Hello</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script type="text/javascript">
+
+      var cijfer = 6.325;//cijfer
+      var cijferAfronden = cijfer.toFixed(2);//op 2 decimalen afronden
+
+      document.getElementById('demo').innerHTML = "cijfer is: " + cijfer;
+      document.getElementById('demo1').innerHTML = "cijfer afgerond op 2 decimalen: " + cijferAfronden.valueOf();//hier toon ik mijn afgeronde getal
+
+    </script>
+
+  </body>
+</html>

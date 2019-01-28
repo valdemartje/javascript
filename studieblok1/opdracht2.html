@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript</title>
+  </head>
+  <body>
+
+    <h1 id="text"></h1>
+    <p id="add"></p>
+    <p id="minus"></p>
+    <p id="modulus"></p>
+    <p id="multiply"></p>
+    <p id="divide"></p>
+
+    <script>
+
+      var textTitle = 'Some things you can do in Javascripts';
+
+      // var person = {
+      //   name = Henkie;
+      //   surname = eikneH;
+      //   hair = brawn;
+      //   eyes = blue;
+      //   skin = lightbrawn
+      // }
+
+      var a, b, c;
+      a = 3;
+      b = 4;
+      c = 5;
+
+      document.getElementById('text').innerHTML = textTitle;
+      document.getElementById('add').innerHTML = a + b + c;
+      document.getElementById('minus').innerHTML = a + c - b;
+      document.getElementById('modulus').innerHTML = c % a;
+      document.getElementById('multiply').innerHTML = a - c * b;
+      document.getElementById('divide').innerHTML = b + c / b;
+
+    </script>
+
+    <!-- <h1>Javascript</h1>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+
+    <script type="text/javascript">
+
+      var hour = new Date().getHours();;
+      var greeting;
+
+      if (hour > 6 && hour < 12) {
+        greeting = "Good morning";
+      }else if (hour > 12 && hour < 18) {
+        greeting = "Good afternoon";
+      }else if (hour > 18 && hour < 24) {
+        greeting = "Good evening";
+      }else {
+        greeting = "Good night";
+      }
+
+      document.getElementById('demo').innerHTML = greeting;
+
+      // function rekenen() {
+      //   document.getElementById('demo').innerHTML = cijfer1 / cijfer2;
+      // }
+      // rekenen();
+
+    </script> -->
+
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>opdracht 4</title>
+  </head>
+  <body>
+
+    <h1>Javascript</h1>
+    <p id="demo"></p>
+
+    <script type="text/javascript">
+
+        var cijfer1, cijfer2, sum, actie;
+        cijfer1 = 10;
+        cijfer2 = 4;
+        sum;
+        actie = 3;
+
+        function rekenen() {
+          switch (actie) {
+            case 1:
+              sum = cijfer1 - cijfer2;
+              break;
+            case 2:
+              sum = cijfer1 + cijfer2;
+              break;
+            case 3:
+              sum = cijfer1 * cijfer2;
+              break;
+            case 4:
+              sum = cijfer1 / cijfer2;
+              break;
+          }
+      }
+      rekenen();
+
+      document.getElementById('demo').innerHTML = sum;
+    </script>
+
+  </body>
+</html>

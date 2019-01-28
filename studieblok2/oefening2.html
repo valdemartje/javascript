@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+    <script type="text/javascript">
+      var zin = "applicatie ontwikkelaar";
+      document.getElementById('demo').innerHTML = "lengte van zin is " + zin.length;//de hele lengte van zin
+      document.getElementById('demo1').innerHTML = "onwikkelaar staat op positie " + zin.indexOf("ontwikkelaar") + " van de zin";//ik zoek de positie van de ontwikkelaar
+      document.getElementById('demo2').innerHTML = "wikkelaar staat op positie " + zin.indexOf("wikkelaar");//dan zoek ik naar wikkelaar
+      document.getElementById('demo3').innerHTML =  zin.slice(14,17);//hier snij ik de zin in stukjes
+      document.getElementById('demo4').innerHTML =  zin.replace("ontwikkelaar", "programmeur");
+      document.getElementById('demo5').innerHTML = zin.toUpperCase();//in hoofdletters
+
+    </script>
+
+  </body>
+</html>
