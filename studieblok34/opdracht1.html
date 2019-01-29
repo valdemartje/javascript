@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>testNaam</title>
+
+    <script>
+        function naamOproepen(voornaam) {
+            var naam = "Valdemar Vreeman";
+            document.getElementById("demo").innerHTML = naam;
+        }
+
+
+        // document.getElementById("btn").onclick = naamOproepen();
+
+        // function naamOproepen(input) {
+        //     var input = document.getElementById("VoorNaam").value;
+        //     document.getElementById("demo").innerHTML = input;
+        // }
+
+        // document.getElementById("submit").onclick = naamOproepen();
+
+    </script>
+
+</head>
+
+<body>
+    <h1>naam tonen</h1>
+    <button id="btn" onclick="naamOproepen()">Try IT!!!!</button>
+
+    <!-- <form action="">
+        <input id="VoorNaam" type="text" name="voornaam">
+        <input type="submit" value="submit" onclick="naamOproepen()"><br>
+    </form> -->
+
+    <p id="demo"></p>
+
+</body>
+
+</html>

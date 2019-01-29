@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>tekst hallo world</title>
+
+    <!-- hier Javascript -->
+    <script>
+
+        function fontWijziging(font) {
+            document.getElementById("div").style.fontFamily = "monospace";
+        }
+
+        function fontOrigineel(fontOrg) {
+            document.getElementById("div").style.fontFamily = "Arial";
+        }
+        function vertaalNed(ned) {
+            document.getElementById("div").innerHTML = "Hallo Wereld";
+        }
+        function vertaalEn(En) {
+            document.getElementById("div").innerHTML = "Hello World";
+        }
+    </script>
+
+
+    <!-- hier een css opmaak -->
+    <style>
+        body {
+            background-image: linear-gradient(to right, red, yellow);
+        }
+
+        /* opmaak div */
+        #div {
+            background-color: blanchedalmond;
+            color: rgba(211, 53, 53, 0.741);
+            font-family: "Arial";
+            font-size: 2vw;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- gecenterd -->
+    <center>
+        <!--style="line-height:300px;"-->
+        <div id=div onmouseover=fontWijziging(this),vertaalNed(this) onmouseout="fontOrigineel(this),vertaalEn(this)">Hello
+            World</div>
+    </center>
+
+</body>
+
+</html>
