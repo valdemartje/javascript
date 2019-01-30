@@ -3,46 +3,45 @@
 
 <head>
     <meta charset="utf-8">
-    <title>tekst hallo world</title>
-
     <!-- hier Javascript -->
-    <script>
-
-        function fontWijziging(font) {
-            document.getElementsByClassName("div").style.fontFamily = "italic";
-        }
-
-        function fontOrigineel(fontOrg) {
-            document.getElementsByClassName("div").style.fontFamily = "Arial";
-        }
-
-        // function background(kleur) {
-        //     document.getElementsByClassName("div").style.color = "#fff";
-        // }
-
-        // function background(kleur) {
-        //     document.getElementsByClassName("div").style.color = "blanchedalmond";
-        // }
-
-    </script>
-
-
     <!-- hier een css opmaak -->
     <style>
         body {
             background-image: linear-gradient(to right, red, yellow);
         }
-    </style>
 
+        #demo {
+            border: 14px solid rgb(199, 29, 29);
+        }
+    </style>
 </head>
 
 <body>
 
+    <script>
+        function fontWijziging(font) {
+            if (event.shiftKey) {
+                document.getElementById("demo").style.color = "red";
+                document.getElementById("demo").style.fontWeight = "";
+                document.getElementById("demo").style.background = "rgb(181,181,181)";
+            } else {
+                document.getElementById("demo").style.color = "purple";
+                document.getElementById("demo").style.fontWeight = "bolder";
+                document.getElementById("demo").style.background = "rgb(18,18,18)";
+            }
+        }
+
+    </script>
+
     <!-- gecenterd -->
     <center style="line-height:300px;">
-
-        <div class=div onmouseover="" onmouseout="background(this)">Hello World</div>
-
+        <!-- onmouseout="fontOrigineel(this)" -->
+        <div id=demo onclick="fontWijziging(this)">Hello World</div>
+        <div id=demo onclick="fontWijziging(this)">Hello World</div>
+        <div id=demo onclick="fontWijziging(this)">Hello World</div>
+        <div id=demo onclick="fontWijziging(this)">Hello World</div>
+        <div id=demo onclick="fontWijziging(this)">Hello World</div>
+        <div id=demo onclick="fontWijziging(this)">Hello World</div>
     </center>
 
 </body>
