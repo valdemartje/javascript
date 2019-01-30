@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>tekst hallo world</title>
+
+    <!-- hier Javascript -->
+    <script>
+
+        function fontWijziging(font) {
+            document.getElementsByClassName("div").style.fontFamily = "italic";
+        }
+
+        function fontOrigineel(fontOrg) {
+            document.getElementsByClassName("div").style.fontFamily = "Arial";
+        }
+
+        // function background(kleur) {
+        //     document.getElementsByClassName("div").style.color = "#fff";
+        // }
+
+        // function background(kleur) {
+        //     document.getElementsByClassName("div").style.color = "blanchedalmond";
+        // }
+
+    </script>
+
+
+    <!-- hier een css opmaak -->
+    <style>
+        body {
+            background-image: linear-gradient(to right, red, yellow);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- gecenterd -->
+    <center style="line-height:300px;">
+
+        <div class=div onmouseover="" onmouseout="background(this)">Hello World</div>
+
+    </center>
+
+</body>
+
+</html>
