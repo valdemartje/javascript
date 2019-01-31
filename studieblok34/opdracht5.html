@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background-image: linear-gradient(to right, red, yellow);
+        }
+
+        #demo {
+            height: 300px;
+            width: 300px;
+            border: 2px solid rgb(140, 187, 87);
+            background-image: linear-gradient(to right, yellow, red);
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        function positieMuis() {
+            var cX = event.clientX;//zij coordinaten van de linkerkant
+            var sX = event.screenX;// coordinaten van de bovenkant
+            var cY = event.clientY;//boven coordinaten van de linkerkant
+            var sY = event.screenY;// coordinaten van de bovenkant
+            var coords1 = "client - X: " + cX + ", Y coords: " + cY;
+            var coords2 = "screen - X: " + sX + ", Y coords: " + sY;
+            document.getElementById("demo").innerHTML = coords1 + "<br>" + coords2;
+        }    
+    </script>
+
+    <center>
+        <!-- <canvas id="myCanvas" width="400" height="400" style="border: 4px solid rgba(76, 228, 96, 0.644)"></canvas> -->
+        <div id="demo" onclick="positieMuis(this)"></div>
+    </center>
+
+</body>
+
+</html>
