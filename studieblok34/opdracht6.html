@@ -14,14 +14,14 @@
 
     <script>
         function myFunction() {
-            var a;
+            var a = "Timer Afgelopen";
             var txt = prompt("Please enter the seconds:", "");
             var sec = txt * 1000;
 
             if (sec == null || sec == "") {
                 a = "User cancelled the prompt.";
             } else {
-                setTimeout(function () { alert("Timer Afgelopen"), alert("YOOOO zet uit dit ding man!!"); }, sec);
+                setTimeout(function () { alert(a); }, sec);
             }
         }
     </script>
