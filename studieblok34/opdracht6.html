@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background-color: rgb(155, 78, 78);
+            color: bisque
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        function myFunction() {
+            var a;
+            var txt = prompt("Please enter the seconds:", "");
+            var sec = txt * 1000;
+
+            if (sec == null || sec == "") {
+                a = "User cancelled the prompt.";
+            } else {
+                setTimeout(function () { alert("Timer Afgelopen"), alert("YOOOO zet uit dit ding man!!"); }, sec);
+            }
+        }
+    </script>
+
+    <center>
+        <form action="">
+            <input type="button" onclick="myFunction()" value="Click ME!!!!">
+        </form>
+        <p id="demo"></p>
+    </center>
+
+</body>
+
+</html>
