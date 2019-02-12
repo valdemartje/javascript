@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+
+    <fieldset>
+        <legend>Namen</legend>
+
+        <button onclick="myFunction()">Click me!!!</button>
+        <hr>
+        <div>
+            <p id="demo"></p>
+        </div>
+    </fieldset>
+
+
+
+    <script>
+
+        function myFunction() {
+
+            var person = prompt("Please enter a name", "Enter a name");
+            var person2 = prompt("Please an other name", "Enter a name");
+
+            if (person != null) {
+                document.getElementById("demo").innerHTML =
+                    person + ", " + person2;
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,41 +1,20 @@
+<!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <style>
-        body {
-            background-color: rgb(155, 78, 78);
-            color: bisque
-        }
-
-        #div {
-            margin: 50px 0px 0px 50px;
-        }
-    </style>
-</head>
-
 <body>
+    <fieldset>
+        <legend>Namen</legend>
 
-    <script>
+        <button id="button">Click me!!!</button>
+        <hr>
 
-        function txt() {
-            var naam;
+        <div>
+            <p id="demo"></p>
+        </div>
 
-            prompt("Voor je naam erin: ", naam);
+    </fieldset>
 
-            if ("txtChange" === undefined) {
-                document.getElementById('txtChange').innerHTML = naam;
-            } else {
-                document.getElementById('txtChange').innerHTML = 'nothing ';
-            }
-
-        }
-
-    </script>
-
-    <div id="div">
-        <p id=txtChange onclick="txt()">klik hier</p>
-    </div>
+    <script src="js/opdracht8.js"></script>
 
 </body>
 
