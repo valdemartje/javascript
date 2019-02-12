@@ -7,30 +7,22 @@
             background-color: rgb(155, 78, 78);
             color: bisque
         }
+
+        #button {
+            margin: 50px 0px 0px 0px;
+        }
     </style>
 </head>
 
 <body>
 
-    <script>
-        function myFunction() {
-            var a = "Timer Afgelopen";
-            var txt = prompt("Please enter the seconds:", "");
-            var sec = txt * 1000;
+    <script src="js/opdracht7.js"></script>
 
-            if (sec == null || sec == "") {
-                a = "User cancelled the prompt.";
-            } else {
-                setTimeout(function () { alert(a); }, sec);
-            }
-        }
-    </script>
-
-    <center>
-        <form action="">
-            <input type="button" onclick="myFunction()" value="Click ME!!!!">
-        </form>
-    </center>
+    <form action="">
+        <!-- Valdemar Vreeman: <input id="button" type="button" onclick="myFunction()" value="Geef Meer Detail"> -->
+        Valdemar Vreeman: <input id="button" type="button" value="Geef Meer Detail">
+        <p id='demo'></p>
+    </form>
 
 </body>
 
